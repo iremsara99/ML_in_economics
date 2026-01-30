@@ -1,0 +1,38 @@
+name: classes
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  # defaults
+  - python
+  - pip:
+      - torch
+      - torchvision 
+
+  # development tools
+  - pre-commit
+  - pytest>=6  # Adds --import-mode option
+  - pytest-cov
+  - setuptools-scm
+
+  # data
+  - pandas
+  - scipy
+  - numpy<2
+  - statsmodels
+
+  # interactive
+  - ipykernel
+
+  # visualisations
+  - matplotlib
+  - nbformat
+  - seaborn
+
+  # machine learning
+  - glum
+  - lightgbm
+  - scikit-learn
+  - shap
